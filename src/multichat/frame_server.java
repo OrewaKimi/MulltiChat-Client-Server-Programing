@@ -8,7 +8,7 @@ import java.net.*;
 import java.util.*;
 /**
  *
- * @author GF63-1039
+ * @author Kimi Maulana
  */
 public class frame_server extends javax.swing.JFrame {
     String username = "Server", address = "localhost";
@@ -254,61 +254,67 @@ public class frame_server extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(0, 32));
 
         ta_chat.setColumns(20);
+        ta_chat.setFont(new java.awt.Font("Open Sans", 0, 12)); // NOI18N
         ta_chat.setRows(5);
         jScrollPane1.setViewportView(ta_chat);
 
         ta_online.setColumns(20);
+        ta_online.setFont(new java.awt.Font("Open Sans", 1, 12)); // NOI18N
         ta_online.setRows(5);
         ta_online.setText("Online User :");
         jScrollPane2.setViewportView(ta_online);
 
-        b_start.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        b_start.setBackground(new java.awt.Color(0, 255, 204));
+        b_start.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         b_start.setText("START");
-        b_start.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        b_start.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         b_start.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b_startActionPerformed(evt);
             }
         });
 
-        b_end.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        b_end.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         b_end.setText("END");
-        b_end.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        b_end.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         b_end.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b_endActionPerformed(evt);
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Open Sans", 1, 18)); // NOI18N
         jLabel1.setText("Currently Online");
 
-        b_send.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        b_send.setBackground(new java.awt.Color(0, 255, 204));
+        b_send.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         b_send.setText("Send");
-        b_send.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        b_send.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         b_send.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b_sendActionPerformed(evt);
             }
         });
 
-        b_clear.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        b_clear.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         b_clear.setText("Clear");
-        b_clear.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        b_clear.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         b_clear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b_clearActionPerformed(evt);
             }
         });
 
-        b_users.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        b_users.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         b_users.setText("Online Us..");
-        b_users.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        b_users.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         b_users.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b_usersActionPerformed(evt);
             }
         });
+
+        tf_chat.setFont(new java.awt.Font("Open Sans", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

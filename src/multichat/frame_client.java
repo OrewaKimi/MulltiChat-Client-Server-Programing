@@ -10,7 +10,7 @@ import java.util.*;
 
 /**
  *
- * @author GF63-1039
+ * @author Kimi Maulana
  */
 
 public class frame_client extends javax.swing.JFrame {
@@ -124,13 +124,16 @@ public class frame_client extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        tf_username.setFont(new java.awt.Font("Open Sans", 0, 12)); // NOI18N
         tf_username.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         ta_chat.setColumns(20);
+        ta_chat.setFont(new java.awt.Font("Open Sans", 0, 12)); // NOI18N
         ta_chat.setRows(5);
         ta_chat.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jScrollPane1.setViewportView(ta_chat);
 
+        tf_chat.setFont(new java.awt.Font("Open Sans", 0, 12)); // NOI18N
         tf_chat.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tf_chat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -138,46 +141,48 @@ public class frame_client extends javax.swing.JFrame {
             }
         });
 
-        b_connect.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        b_connect.setBackground(new java.awt.Color(0, 255, 204));
+        b_connect.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         b_connect.setText("Connect");
-        b_connect.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        b_connect.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         b_connect.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b_connectActionPerformed(evt);
             }
         });
 
-        b_disconnect.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        b_disconnect.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         b_disconnect.setText("Disconnect");
-        b_disconnect.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        b_disconnect.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         b_disconnect.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b_disconnectActionPerformed(evt);
             }
         });
 
-        b_anonymous.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        b_anonymous.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         b_anonymous.setText("Anonymous Login");
-        b_anonymous.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        b_anonymous.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         b_anonymous.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b_anonymousActionPerformed(evt);
             }
         });
 
-        b_send.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        b_send.setBackground(new java.awt.Color(51, 255, 204));
+        b_send.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         b_send.setText("SEND");
-        b_send.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        b_send.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         b_send.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b_sendActionPerformed(evt);
             }
         });
 
-        lb_username.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        lb_username.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         lb_username.setText("Username : ");
 
-        jLabel2.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Open Sans", 1, 18)); // NOI18N
         jLabel2.setText("CONVERSATION");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -196,13 +201,13 @@ public class frame_client extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(tf_chat, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 355, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(b_disconnect, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(b_connect, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(b_anonymous, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(b_send, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(b_send, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(17, 17, 17))
         );
         layout.setVerticalGroup(
@@ -225,7 +230,7 @@ public class frame_client extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(tf_chat, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(b_send, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
 
         pack();
